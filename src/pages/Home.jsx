@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <div>
     <Header/>
-    <Blogs/>
+    <Blogs padding = "p-20"/>
     <Pagination/>
     </div>
   )

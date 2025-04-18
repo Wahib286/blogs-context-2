@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-export const BlogDetails = ({ post }) => {
+export const BlogDetails = ({ post,customMargin,padding }) => {
   return (
-    <div className='mt-[60px] w-11/12 max-w-[1110px] mx-auto p-4 bg-white rounded-2xl shadow-lg'>
+    <div className={`${customMargin} w-11/12 max-w-[1110px] mx-auto p-4 bg-white rounded-2xl shadow-lg`}>
       <NavLink to={`/blog/${post.id}`}>
         <h1 className='text-3xl font-bold text-blue-700 hover:underline'>
           {post.title}
