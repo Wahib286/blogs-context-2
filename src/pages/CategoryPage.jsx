@@ -1,7 +1,8 @@
 import React from 'react'
 import Header from '../components/Header';
-import { useLocation, useNavigation } from 'react-router-dom';
+import Blogs from '../components/Blogs';
 import Pagination from '../components/Pagination';
+import { useLocation, useNavigation } from 'react-router-dom';
 export const CategoryPage = () => {
     const navigation = useNavigation();
     const location = useLocation();
