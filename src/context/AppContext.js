@@ -25,8 +25,8 @@ export default function AppContextProvider({ children }) {
     try {
       const res = await fetch(url);
       const data = await res.json();
-      if (!data.posts || data.posts.length === 0)
-        throw new Error("Something Went Wrong");
+          if (!data.posts || data.posts.length === 0)
+            throw new Error("Something Went Wrong");
       console.log("Api Response", data);
       setPage(data.page);
       setPosts(data.posts);
