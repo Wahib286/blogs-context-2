@@ -13,6 +13,7 @@ export default function App() {
   const location = useLocation();
 
   useEffect(() => {
+    
     const page = searchParams.get("page")?? 1;
 
     if(location.pathname.includes("tags")){
