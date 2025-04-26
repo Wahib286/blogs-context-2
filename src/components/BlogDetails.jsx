@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-export const BlogDetails = ({ post,customMargin,padding }) => {
+export const BlogDetails = ({ post,customMargin}) => {
   return (
     <div className={`${customMargin} w-11/12 max-w-[1110px] mx-auto p-4 bg-white rounded-2xl shadow-lg`}>
       <NavLink to={`/blog/${post.id}`}>
