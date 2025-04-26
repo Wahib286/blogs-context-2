@@ -44,13 +44,13 @@ export const BlogPage = () => {
       <div className="w-11/12 max-w-[1110px] mx-auto mt-6">
         <button
           onClick={() => navigation(-1)}
-          className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+          className="mt-14 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
         >
           ← Back
         </button>
 
         {loading ? (
-          <div className="mt-10 flex justify-center items-center">
+          <div className="h-100vh w-100vw flex justify-center items-center">
             <Spinner />
           </div>
         ) : blog ? (
